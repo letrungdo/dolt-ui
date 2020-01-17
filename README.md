@@ -19,10 +19,10 @@ yarn build
 
 ## Publishing the package to Github repo
 ```sh
-yarn login --registry=https://npm.pkg.github.com/
+npm login --registry=https://npm.pkg.github.com/
 ```
 Note: Password is Github `Personal access tokens`
 
 ```sh
-yarn publish
+npm publish
 ```
