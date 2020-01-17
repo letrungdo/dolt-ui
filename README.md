@@ -17,7 +17,12 @@ yarn sb
 yarn build
 ```
 
-### Publish lib
+## Publishing the package to Github repo
+```sh
+yarn login --registry=https://npm.pkg.github.com/
+```
+Note: Password is Github `Personal access tokens`
+
 ```sh
 yarn publish
 ```
