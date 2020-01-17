@@ -1,44 +1,39 @@
 {
-  "name": "dolt-ui",
-  "version": "0.1.3",
+  "name": "@letrungdo/dolt-ui",
+  "version": "0.1.5",
   "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letrungdo/dolt-ui.git"
+  },
+  "keywords": [
+    "dolt-ui",
+    "create npm package",
+    "create npm package with CRA",
+    "how to create npm package react"
+  ],
+  "author": "Le Trung Do",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letrungdo/dolt-ui/issues"
+  },
+  "homepage": "https://github.com/letrungdo/dolt-ui#readme",
   "babel": {
     "presets": [
       "@babel/preset-react"
     ]
   },
   "main": "dist/index.js",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "sb": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel ./src/components -d dist --copy-files"
+    "build": "rm -rf dist && mkdir dist &&  babel ./src/lib -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
@@ -47,7 +42,12 @@
     "@storybook/addon-links": "^5.3.6",
     "@storybook/addons": "^5.3.6",
     "@storybook/preset-create-react-app": "^1.5.1",
-    "@storybook/react": "^5.3.6"
+    "@storybook/react": "^5.3.6",
+    "react-scripts": "3.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "files": [
     "dist"
